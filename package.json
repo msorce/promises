@@ -4,7 +4,9 @@
   "description": "javascript promises",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --colors",
+    "dev" : "webpack-dev-server --inline"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
     "babel-core": "^6.20.0",
     "babel-loader": "^6.2.9",
     "babel-preset-latest": "^6.16.0",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }

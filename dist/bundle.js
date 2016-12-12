@@ -45,7 +45,8 @@
 /***/ function(module, exports) {
 
 	(()=>{
-	  alert();
+	  alert(1);
+	  alert(3);
 	})();
 
 
