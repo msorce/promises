@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --colors",
-    "dev" : "webpack-dev-server --inline"
+    "dev": "webpack-dev-server --inline"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/msorce/promises#readme",
   "devDependencies": {
+    "angular": "^1.6.0",
     "babel-core": "^6.20.0",
     "babel-loader": "^6.2.9",
     "babel-preset-latest": "^6.16.0",
