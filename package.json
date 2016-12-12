@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/msorce/promises/issues"
   },
-  "homepage": "https://github.com/msorce/promises#readme"
+  "homepage": "https://github.com/msorce/promises#readme",
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^1.14.0"
+  }
 }
