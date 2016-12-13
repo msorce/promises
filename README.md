@@ -1,6 +1,5 @@
-# promises
-###javascript promises
----
+# javascript promises
+
 #### Demo
 
 
