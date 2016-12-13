@@ -5,7 +5,6 @@ app.service('testService', function($q, $timeout) {
 
   this.getStuff = () => {
     return $q((resolve, reject) => {
-      // console.log('getting stuff');
       var log = document.getElementById('log');
       log.insertAdjacentHTML('beforeend', `<div>getting Stuff</div>`);
       $timeout(() => {
