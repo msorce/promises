@@ -6,7 +6,16 @@
 <a  href="https://jsbin.com/dolamupeki/edit?html,js,output">demo on js bin</a>
 
 ---
-####app/index.js
+#### Try it out
+  ```
+  git clone https://github.com/msorce/promises.git
+  cd promises
+  npm install
+  npm run dev  
+  ```
+  navigate to localhost:8080
+---
+#### app/index.js
 ```javascript
 angular = require('angular');
 
