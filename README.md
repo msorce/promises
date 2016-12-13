@@ -12,8 +12,9 @@
   cd promises
   npm install
   npm run dev  
+  //navigate to localhost:8080
   ```
-  navigate to localhost:8080
+  
 ---
 #### app/index.js
 ```javascript
