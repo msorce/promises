@@ -4,7 +4,7 @@
 #### Demo
 
 
-<a class="jsbin-embed" href="https://jsbin.com/dolamupeki/embed?html,js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.40.2"></script>
+<a  href="https://jsbin.com/dolamupeki/edit?html,js,output">demo on js bin</a>
 
 ---
 ####app/index.js
