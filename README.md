@@ -1,4 +1,4 @@
-# javascript promises
+# Javascript promises
 
 #### Demo
 
