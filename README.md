@@ -23,18 +23,26 @@ angular = require('angular');
 var app = angular.module('app', []);
 app.service('testService', function($q, $timeout) {
 
-  this.getStuff = $q(function(resolve, reject) {
-    console.log('getting stuff');
-    $timeout(function() {
-      resolve('got stuff');
-    }, 2000);
-  });
-}); //end getStuff
+  this.getStuff = () => {
+    return $q((resolve, reject) => {
+      var log = document.getElementById('log');
+      log.insertAdjacentHTML('beforeend', `<div>getting Stuff</div>`);
+      $timeout(() => {
+        resolve('got stuff');
+      }, 2000);
+    });
+  };
+
+});
 
 
-app.controller('mainCtrl', function($scope, testService) {
-  testService.getStuff.then(function(data) {
-    console.log(data);
-  });
+app.controller('mainCtrl', ($scope, testService) => {
+  $scope.fn = () => {
+    var promise = testService.getStuff();
+    promise.then((resolvedValue) => {
+      log.insertAdjacentHTML('beforeend', `<div> ${resolvedValue} </div>`);
+    });
+  };
+
 });
 ```
