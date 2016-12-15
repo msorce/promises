@@ -1,8 +1,9 @@
 angular = require('angular');
 
 var app = angular.module('app', []);
-app.service('testService', function($q, $timeout) {
+app.service('testService', testService);
 
+function testService($q, $timeout) {
   this.getStuff = () => {
     return $q((resolve, reject) => {
       var log = document.getElementById('log');
@@ -12,16 +13,15 @@ app.service('testService', function($q, $timeout) {
       }, 2000);
     });
   };
+}
 
-});
+app.controller('mainCtrl', mainCtrl);
 
-
-app.controller('mainCtrl', ($scope, testService) => {
+function mainCtrl($scope, testService) {
   $scope.fn = () => {
     var promise = testService.getStuff();
     promise.then((resolvedValue) => {
       log.insertAdjacentHTML('beforeend', `<div> ${resolvedValue} </div>`);
     });
   };
-
-});
+}
