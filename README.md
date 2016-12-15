@@ -1,4 +1,5 @@
 # Javascript promises
+### example of a promise implementation using the $q library in angular
 
 #### Demo
 
