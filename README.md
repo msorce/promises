@@ -3,7 +3,7 @@
 #### Demo
 
 
-<a  href="https://jsbin.com/dolamupeki/edit?html,js,output">demo on js bin</a>
+<a  href="https://jsbin.com/hiberayohe/1/edit?html,js,output">demo on js bin</a>
 
 ---
 #### Try it out
