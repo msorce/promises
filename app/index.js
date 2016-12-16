@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 angular = require('angular');
 
 var app = angular.module('app', []);
@@ -24,10 +26,10 @@ function testService($q, $timeout) {
       log.insertAdjacentHTML('beforeend', `<div>getting Stuff ES6</div>`);
 
       $timeout(() => {
-        resolve('got with ES6')
-      }, 2000)
-    })
-  }
+        resolve('got with ES6');
+      }, 2000);
+    });
+  };
 }
 
 app.controller('mainCtrl', mainCtrl);
